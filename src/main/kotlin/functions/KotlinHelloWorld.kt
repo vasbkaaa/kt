@@ -27,6 +27,7 @@ class HelloWorld : HttpFunction {
     @Throws(IOException::class)
     override fun service(request: HttpRequest, response: HttpResponse) {
         response.writer.write("Hello World!")
+        print("123");
     }
 }
 // [END functions_helloworld_get]
